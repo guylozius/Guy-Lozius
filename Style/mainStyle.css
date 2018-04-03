@@ -11,22 +11,27 @@ body{
   color:var(--white);
   font-family: 'Lato', sans-serif;
   margin: 0px;
+    width: 100%;
 }
 p{
   font-size: 20px;
 }
 .navLinks nav{
-  background-color: var(--purple);
+  
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(4,1fr);
 }
 .navLinks a{
+    background-color: var(--purple);
   display:block;
   padding:10px;
   text-align: center;
   text-decoration: none;
   color: #0E1111;
+}
+a:hover{
+    background-color: var(--white);
 }
 h1{
 color: var(--purple);
@@ -92,8 +97,8 @@ padding-right: 500px;
 }
 #Skills{
   width: 100%;
-  background-image: url(http://paypercode.com/wp-content/uploads/2016/12/featuredhtmlimg.png);
-  background-size: contain;
+  background-image: url(../img/art-backlight.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
  height:630px;
  width: 100%;
