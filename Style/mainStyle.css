@@ -10,7 +10,7 @@
 body{
  background-color: var(--mainColor);
     background-size: contain;
-  color:var(--white);
+  color:white;
   font-family: 'Lato', sans-serif;
   margin: 0px;
     width: 100%;
@@ -21,6 +21,7 @@ p{
 .wrapper{
     position: fixed;
     width: 100%;
+    z-index: 9;
    
 }
 nav{
@@ -32,15 +33,18 @@ nav{
   
 }
 nav a{
+    font-size: 18px;
     background-color: var(--purple);
   display:block;
   padding:10px;
   text-align: center;
   text-decoration: none;
   color: #0E1111;
+  -webkit-transition:  background-color 1.2s;
+    transition:  background-color 1.2s;
 }
-a:hover{
-    background-color: var(--white);
+nav a:hover{
+    background-color: white;
 }
 h1{
 color: var(--purple);
@@ -67,21 +71,22 @@ h3{
 }
 #About_me {
      display: flex;
-  background-image: url(../img/bear-laptop.jpg);
+  background-image: url(https://images.pexels.com/photos/745243/pexels-photo-745243.jpeg?auto=compress&cs=tinysrgb&h=350);
   background-size:100% 100%;;
   background-origin: border-box;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-filter: drop-shadow(70px 10px 0px var(--black));
-  filter: drop-shadow(70px 10px 10px var(--black));
-  height:600px;
+  height:700px;
   width: 100%;
     align-items: center;
     justify-content: center;
+    -webkit-filter: saturate(18) blur(10%);
+    filter: saturate(180deg) blur(5px);
 }
  .pclass{
      
-   width: 300px;
+   width: 800px;
+     font-size: 40px;
     transform: translate(0px,150px);
      align-self: center;
      text-overflow: ellipsis;
@@ -110,8 +115,8 @@ h3{
   padding:30px ;
 }
 100%{
-padding-left: 500px;
-padding-right: 500px;
+padding-left: 250px;
+padding-right: 250px;
 }
 }
 #Skills{
@@ -127,7 +132,8 @@ padding-right: 500px;
 #Skills h3{
 transform: translate( -3px , -50px);
 }
-@media only screen and (max-width: 800px){
+
+@media only screen and (max-width: 500px){
   nav{
     display: grid;
     grid-gap: 5px;
@@ -136,40 +142,15 @@ transform: translate( -3px , -50px);
   h3{
     font-size: 45px;
   }
+    .titleSection{
+        margin-top: 100px;
+    }
   #Skills{
     background-position: 0px 30px;
 
   }
 }
-/* #Show_case{
-  display: flex;
-  flex-direction: column;
- align-items: center;
- background-color:var(--white);
- width:100% ;
- height: auto;
-}
-.case{
-  grid-area: pic;
-  
-  max-width:100%;
-  max-height: 100%;
-  width: 100%;
-  height:500px;
-  border: 1px solid rgb(255, 248, 248);
-}
-.btn button{
-  grid: btn; 
-  color: var(--purple);
-  
-  height: 20px;
-  width: 20px;
-  display: inline;
-}
-.mySlides{
-  height:inherit;
-  width: inherit;
-} */
+
 
 
 
